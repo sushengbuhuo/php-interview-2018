@@ -6,10 +6,15 @@
 # 简历
 
 关于简历怎么写，知乎上有很多对应问题，可以自行搜索，这里推荐几个简历相关的 repo
+
 [程序员写简历时，常用的例句范式]( https://github.com/resumejob/awesome-resume)
+
 [简历常用例句 ](https://github.com/resumejob/awesome-resume) 
+
 [程序员简历模板](https://github.com/geekcompany/ResumeSample )
+
 [在线简历]( http://cv.ftqq.com/#)
+
 # 笔试题
 
 ### 写一个email的正则
@@ -24,17 +29,17 @@ preg_match($pattern, $mail, $matches);
 
 ![clipboard.png](/img/bVbdOqw)
 
-###echo (int)((0.1+0.7)*10);//7
+### echo (int)((0.1+0.7)*10);//7
 看似有穷的小数, 在计算机的二进制表示里却是无穷的 http://www.cnblogs.com/datang6777/p/7049159.html 
 echo serialize(0.1+0.7); //d:0.79999999999999993;
 
-###熟悉的linux命令
+### 熟悉的linux命令
 ps cat tail top awk
 
-###javascript跨域如何实现
+### javascript跨域如何实现
 jsonp 和 cors
 
-###熟悉的5种设计模式及用单例模式建立一个数据库连接
+### 熟悉的5种设计模式及用单例模式建立一个数据库连接
 单例 工厂 策略 适配器 观察者
 ```js
 <?php
@@ -97,7 +102,7 @@ $connector = DBHelper::get_class_nmdb($host, $username, $password);
 $connector -> select_db($database);
 ?>
 ```
-###冒泡排序 大数在前 小数在后
+### 冒泡排序 大数在前 小数在后
 ```js
 $arr=[5,2,8,1,9];
 $len=count($arr);
@@ -112,31 +117,31 @@ for($k=1;$k<$len;$k++)
 }
 print_r($arr);
 ```
-###如何实现单点登录
+### 如何实现单点登录
 利用 jwt 实现 session 共享，具体使用 jwt 参考 http://blog.leapoahead.com/2015/09/07/user-authentication-with-jwt/ 
-###出现性能瓶颈如何快速定位解决
+### 出现性能瓶颈如何快速定位解决
 服务器负载 慢日志 xhprof 慢sql
-###熟悉的 nosql 和 sql 有什么区别（优势，劣势）
+### 熟悉的 nosql 和 sql 有什么区别（优势，劣势）
  Memcache，Redis 都是内存数据库 
 redis是一个开源的支持多种数据类型的key=>value的存储数据库。支持字符串、列表、集合、有序集合、哈希五种类型
 memcache 只支持简单的key/value数据结构，不像Redis可以支持丰富的数据类型。
  无法进行持久化，数据不能备份，只能用于缓存使用，且重启后数据全部丢失
 
-###如何保证代码质量
+### 如何保证代码质量
 高质量代码三要素：可读性，可维护性，可变更性 代码质量评价：低耦合，高内聚  https://segmentfault.com/a/1190000004355331 
 
-###学习PHP的渠道 看过的PHP书，了解的PHP开源项目 
+### 学习PHP的渠道 看过的PHP书，了解的PHP开源项目 
 php.net sf google 
 《Modern PHP》《PHP核心技术和最佳实践》《PHP the right way》
 laravel carbon queryphp等
 
-###mysql innodb 有哪些索引类型 分别在什么场景下使用
+### mysql innodb 有哪些索引类型 分别在什么场景下使用
 索引的本质还是提升查询数据库的速度，减少服务器I/O开销 
 主键 唯一 普通 联合 
 
-###对一个链表顺序反转
+### 对一个链表顺序反转
 
-###实现PHP5中的 var_dump 函数
+### 实现PHP5中的 var_dump 函数
 ```js
 function mydump() {
         $args   = func_num_args();
@@ -225,18 +230,18 @@ $arr2   = array(
 mydump($arr2); 
 mydump(1,true,null);
 ```
-###如何设计一个微博
+### 如何设计一个微博
 用户可以关注他人 可以发布微博 可以查看关注人的微博 可以评论微博
 
 用户表 关注表 微博表 评论表 
 
-###获取上周一和周日的日期
+### 获取上周一和周日的日期
 `echo date('Y-m-d',strtotime('monday last week'));`
 `echo date('Y-m-d', strtotime('-' . (6+date('w')) . ' days'));`
 `echo date('Y-m-d',strtotime('sunday last week'));`
-###对数组实现去除空元素 排重 按值从大到小排序 重新建立数字索引 
+### 对数组实现去除空元素 排重 按值从大到小排序 重新建立数字索引 
 `array_values(rsort(array_unique(array_filter($arr))))`
-###对二维数组按照 title+pubscore 去重
+### 对二维数组按照 title+pubscore 去重
 ```js
 function unique_by_key($arr, $key1,$key2) {
   $tmp_key = [];
@@ -260,19 +265,19 @@ $arr = array(
 print_r(unique_by_key($arr,'title','num'));
 
 ```
-###写一个正则 匹配新闻标题不能为数字，纯字母，不能包含 彩票/广告/启示
+### 写一个正则 匹配新闻标题不能为数字，纯字母，不能包含 彩票/广告/启示
 
-###linux 压缩 解压缩命令
+### linux 压缩 解压缩命令
 tar -cvf jpg.tar *.jpg
 tar -xvf jpg.tar
-###linux下后台执行 test.php 将结果输出到test.log
+### linux下后台执行 test.php 将结果输出到test.log
 php test.php & >test.log
-###写一个shell命令 实现找出所有包含 spread的进程，杀死这些进程并记录日志，日志包含杀死进程名称和杀死进程的时间
+### 写一个shell命令 实现找出所有包含 spread的进程，杀死这些进程并记录日志，日志包含杀死进程名称和杀死进程的时间
 `ps -ef |grep spread |grep -v grep |awk '{print $2}'|xargs kill -9`
 `kill -9 $(ps -ef | grep spread| grep -v grep | awk '{print $2}')`
-###一个json 转化输出有层级的文本
+### 一个json 转化输出有层级的文本
 参考 https://segmentfault.com/a/1190000008265618
-###排行榜统计 sql 
+### 排行榜统计 sql 
 订单表有如下字段
 id 自增id
 user_id 购买者id
@@ -285,11 +290,11 @@ select product_id,count(*) s from orders group by product_id order by s  having 
 
 select user_id,sum(price) s from orders group by user_id order by s desc limit 10;
 
-###列出你知道的魔术方法 ，并说明他们的用途
+### 列出你知道的魔术方法 ，并说明他们的用途
 
 参考手册 http://php.net/manual/zh/language.oop5.magic.php
 
-###写出你知道的http头部属性 注意大小写 并说明用途
+### 写出你知道的http头部属性 注意大小写 并说明用途
 
 Accept	指定客户端能够接收的内容类型	Accept: text/plain, text/html
 Accept-Charset	浏览器可以接受的字符编码集。	Accept-Charset: iso-8859-5
@@ -322,7 +327,7 @@ User-Agent	User-Agent的内容包含发出请求的用户信息	User-Agent: Mozi
 Via	通知中间网关或代理服务器地址，通信协议	Via: 1.0 fred, 1.1 nowhere.com (Apache/1.1)
 Warning	关于消息实体的警告信息	Warn: 199 Miscellaneous warning
 
-###有一个文本文件，内容为ip 每行一个ip 格式为 
+### 有一个文本文件，内容为ip 每行一个ip 格式为 
 1.2.3.4 
 4.5.6.7
 2.3.4.5
@@ -333,9 +338,9 @@ Warning	关于消息实体的警告信息	Warn: 199 Miscellaneous warning
 2.3.4.5  1
 
 `awk '{arr[$1]++;}END{for(i in arr){print i , arr[i] }}' test.txt`
-###__destruction() 和 __autoload()触发时机
+### __destruction() 和 __autoload()触发时机
 unset 和 加载一个为包含的文件
-###如何实现一个数组[1,2,3]连续复制3次变为[1,2,3,1,2,3,1,2,3]
+### 如何实现一个数组[1,2,3]连续复制3次变为[1,2,3,1,2,3,1,2,3]
 ```js
 $arr=[1,2,3];
 print_r(f($arr,3));
@@ -344,13 +349,13 @@ function f($arr,$num){
 }
 ```
  
-###抽象类和接口的区别，分别在什么场景使用
+### 抽象类和接口的区别，分别在什么场景使用
 抽象类可以实现的功能，接口也可以实现。
 抽象类的接口的区别，不在于编程实现，而在于程序设计模式的不同。
 一般来讲，抽象用于不同的事物，而接口用于事物的行为。
 参考 https://segmentfault.com/a/1190000004699158 
 
-###猴子选大王 
+### 猴子选大王 
 一群猴子排成一圈，按1，2，...，n依次编号。然后从第1只开始数，数到第m只,把它踢出圈，从它后面再开始数，再数到第m只，在把它踢出去...，如此不停的进行下去，直到最后只剩下一只猴子为止，那只猴子就叫做大王。要求编程模拟此过程，输入m、n,输出最后那个大王的编号
 ```js
 echo monkey(10,4);//5
@@ -369,7 +374,7 @@ function monkey($m,$n){
     return $arr[$i];
 }
 ```
-###写一个快速排序
+### 写一个快速排序
 ```js
 function quickSort($arr) {
     $len = count($arr);
@@ -396,9 +401,9 @@ function quickSort($arr) {
     return array_merge($min,$base,$max);
 }
 ```
-###实现一个发红包功能，100元发给8人
+### 实现一个发红包功能，100元发给8人
 
-###实现斐波那契数列
+### 实现斐波那契数列
 ```js
 
 function fib($n) {
@@ -416,7 +421,7 @@ for ($i = 3; $i <= $n; $i++) {
 return $arr[$n];
 } 
 ```
-###二分查找
+### 二分查找
 ```js
 function binSearch($arr,$search){
 $height=count($arr)-1;
@@ -434,7 +439,7 @@ $height=$mid-1;
 return "查找失败";
 }
 ```
-###二维数组转换成一维数组
+### 二维数组转换成一维数组
 ```js
 $user = array(
      array('id' => 100, 'username' => 'a1'),
@@ -482,30 +487,30 @@ $arr = [1,2,3];
     }
     var_export($arr);
     //output:array(0=>1,1=>2,2=>2)
-    ```
-#面试题
+ ```
+# 面试题
 
-###nginx 热启动
+### nginx 热启动
 nginx -s reload
 
-###读取1G大文件
+### 读取1G大文件
 使用游标或者yield生成器来获取数据库的数据  https://segmentfault.com/a/1190000012334856
 
-###http  https 区别 
+### http  https 区别 
  HTTPS协议是由SSL+HTTP协议构建的可进行加密传输、身份认证的网络协议，要比http协议安全。 参考 https://www.itcodemonkey.com/article/4195.html 
 
-###redis 持久化
+### redis 持久化
  aof rdb  http://www.hoohack.me/2018/04/04/deep-learning-redis-durability 
 https://juejin.im/entry/5b35ad87f265da597759804b/ 
-###权限如何设计
+### 权限如何设计
 user用户表、role角色表、perm权限表、role-user用户角色关联表、role-perm角色权限关联表
-###apache nginx 区别
+### apache nginx 区别
 https://juejin.im/entry/5b34b2d7e51d4558ae19f2eb 
 nginx从入门到实践 https://juejin.im/post/5a2600bdf265da432b4aaaba
-###数据库锁的了解
+### 数据库锁的了解
 乐观锁（代码处理）与悲观锁( select for update) http://www.hollischuang.com/archives/934
 
-###2038 时间问题
+### 2038 时间问题
 ```js
  //解决：DateTime 或者 使用64位操作系统
 
@@ -519,29 +524,29 @@ $result = $date->format('U');
 return $result; 
 } 
 ```
-###谈谈最近微信支付 xxe 漏洞
+### 谈谈最近微信支付 xxe 漏洞
 php 调用simplexml_load_string之前把外部引用实体关掉：  
 libxml_disable_entity_loader(true);  
 $data = json_decode(json_encode(simplexml_load_string($xml, 'SimpleXMLElement', LIBXML_NOCDATA)), true);
 
-###写个定时任务
+### 写个定时任务
 `*　　*　　*　　*　　*　 command`     
 分　时　日　月　周　命令 
 工具 https://crontab-generator.org/ 
 https://crontab.guru/   
 https://tool.lu/crontab/
  https://atool.vip/crontab
-###opcache了解
+### opcache了解
 缓存字节码 
-###array_merge + 区别 
+### array_merge + 区别 
 [参考](https://segmentfault.com/a/1190000014838713)
-###如何实现多继承
+### 如何实现多继承
 
 trait的出现就是一种解决需要多继承场景的方式。 使用场景是如果多个类都要用到同样的属性或者方法，这个时候使用Traits可以方便的给类增加这些属性或方法，而不用每个类都去继承一个类，如果说继承类是竖向扩展一个类，那么Traits是横向扩展一个类，从而实现代码复用。 
  
 [PHP中Trait详解及其应用]( https://segmentfault.com/a/1190000008009455 )
 
-###PHP 多线程
+### PHP 多线程
  https://www.cnblogs.com/kluan/p/5934228.html 
 https://www.cnblogs.com/zhenbianshu/p/7978835.html
 ```js
@@ -558,44 +563,44 @@ class Request extends Thread {
 $ch = new Request("www.baidu.com");
 $ch ->start();
 ```
-###php执行流程 
+### php执行流程 
 浏览器输入URL->Nginx(从配置文件中加载nginx的fast-cgi模块)->php-fpm(fastcgi的进程管理器)
 先到php-fpm的master进程(负责监听端口,接收Nginx的请求,据子进程的状态将请求分配给子进程去处理)->worker进程负责处理请求
 worker 进程则一般有多个(具体数量根据实际需要配置)，每个进程内部都嵌入了一个 PHP 解释器，是 PHP 代码真正执行的地方。
  master 进程做的事情是 PHP环境初始化、事件监听(重启/重载、关闭、分发请求)、子进程状态
 https://youngperson.github.io/blog/#/posts/16
-###如何优化 mysql 
+### 如何优化 mysql 
  
 数据库字段冗余，增添索引、优化sql、分库分表 主从分离 
-###常用 git 命令
+### 常用 git 命令
 git add git log git pull git push  git remote git checkout 
-###php7常用新特性
+### php7常用新特性
 比如标量类型声明、返回类型声明
-###自动加载如何实现的
+### 自动加载如何实现的
 spl_autoload_register composer
-###用过哪些PHP扩展
+### 用过哪些PHP扩展
 curl mb 
-###php 异步如何实现
+### php 异步如何实现
 curl_multi_exec 
-###了解的微服务
-###redis 过期如何处理
+### 了解的微服务
+### redis 过期如何处理
 惰性删除与定期删除
-###explain 关注哪些
+### explain 关注哪些
 type 字段 const、eq_reg、ref、range、index和ALL
-###对你最有挑战的项目是怎样的
-###laravel 优势是什么
-#非技术问题
+### 对你最有挑战的项目是怎样的
+### laravel 优势是什么
+# 非技术问题
 为什么从上家公司离职？
 未来三年的职业规划的怎样的？
 你有什么问的？
 
-#资源 
+# 资源 
 
-PHP面试准备 https://github.com/xianyunyh/PHP-Interview
-关于面试/谈Offer/程序员职场生涯等 https://github.com/lietoumai/awesome-offer
-少写PHP "烂"代码 https://segmentfault.com/a/1190000015274515 
-PHP工程师面试题目 https://github.com/hookover/php-engineer-interview-questions
-PHPer 面试指南 https://github.com/todayqq/PHPerInterviewGuide 
+[PHP面试准备]( https://github.com/xianyunyh/PHP-Interview)
+[关于面试/谈Offer/程序员职场生涯等]( https://github.com/lietoumai/awesome-offer)
+[少写PHP "烂"代码] (https://segmentfault.com/a/1190000015274515) 
+[PHP工程师面试题目]( https://github.com/hookover/php-engineer-interview-questions)
+[PHPer 面试指南](https://github.com/todayqq/PHPerInterviewGuide )
 一个16年毕业生所经历的php面试 https://github.com/OMGZui/noteBook/blob/master/level.md
 找工作遇到的面试题目 https://cloud.tencent.com/developer/article/1104156 
 大话编程 https://mp.weixin.qq.com/s/nCx7Jb5WRXGzkpsuth6LAw 
