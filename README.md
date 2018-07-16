@@ -295,7 +295,7 @@ select user_id,sum(price) s from orders group by user_id order by s desc limit 1
 参考手册 http://php.net/manual/zh/language.oop5.magic.php
 
 ### 写出你知道的http头部属性 注意大小写 并说明用途
-
+```js
 Accept	指定客户端能够接收的内容类型	Accept: text/plain, text/html
 Accept-Charset	浏览器可以接受的字符编码集。	Accept-Charset: iso-8859-5
 Accept-Encoding	指定浏览器可以支持的web服务器返回内容压缩编码类型。	Accept-Encoding: compress, gzip
@@ -326,7 +326,7 @@ Upgrade	向服务器指定某种传输协议以便服务器进行转换（如果
 User-Agent	User-Agent的内容包含发出请求的用户信息	User-Agent: Mozilla/5.0 (Linux; X11)
 Via	通知中间网关或代理服务器地址，通信协议	Via: 1.0 fred, 1.1 nowhere.com (Apache/1.1)
 Warning	关于消息实体的警告信息	Warn: 199 Miscellaneous warning
-
+```
 ### 有一个文本文件，内容为ip 每行一个ip 格式为 
 1.2.3.4 
 4.5.6.7
@@ -597,49 +597,93 @@ type 字段 const、eq_reg、ref、range、index和ALL
 # 资源 
 
 [PHP面试准备]( https://github.com/xianyunyh/PHP-Interview)
+
 [关于面试/谈Offer/程序员职场生涯等]( https://github.com/lietoumai/awesome-offer)
+
 [少写PHP "烂"代码] (https://segmentfault.com/a/1190000015274515) 
+
 [PHP工程师面试题目]( https://github.com/hookover/php-engineer-interview-questions)
+
 [PHPer 面试指南](https://github.com/todayqq/PHPerInterviewGuide )
-一个16年毕业生所经历的php面试 https://github.com/OMGZui/noteBook/blob/master/level.md
-找工作遇到的面试题目 https://cloud.tencent.com/developer/article/1104156 
-大话编程 https://mp.weixin.qq.com/s/nCx7Jb5WRXGzkpsuth6LAw 
+
+[一个16年毕业生所经历的php面试](https://github.com/OMGZui/noteBook/blob/master/level.md)
+
+[找工作遇到的面试题目]( https://cloud.tencent.com/developer/article/1104156 )
+
+[大话编程]( https://mp.weixin.qq.com/s/nCx7Jb5WRXGzkpsuth6LAw) 
+
 https://mp.weixin.qq.com/s/13OJ8YAXLj3tqAC0aZ1e_Q  
-strace帮助你调试PHP代码 https://www.jianshu.com/p/cbc716f8a932? 
-Resetful API 设计规范 https://godruoyi.com/posts/resetful-api-design-specifications 
-Java 基础知识、底层原理 面试 https://github.com/crossoverJie/Java-Interview
-PHP基础数据结构专题系列目录地址 https://github.com/xx19941215/light-tips
-后端架构师技术图谱 https://github.com/xingshaocheng/architect-awesome
-记一次面试，分享我整理的答案 https://laravel-china.org/articles/9143/write-an-interview-and-share-my-answers
-PHP 面试知识点汇总 https://github.com/eaglewu/php-interview-best-practices-in-china 
-平时积累 https://github.com/OMGZui/noteBook
-PHP 代码简洁之道 https://github.com/ryanmcdermott/clean-code-javascript 
-PHP PSR 标准规范 https://www.twle.cn/l/yufei/phppsr/php-psr-index.html
+[strace帮助你调试PHP代码]( https://www.jianshu.com/p/cbc716f8a932? )
+
+[Resetful API 设计规范](https://godruoyi.com/posts/resetful-api-design-specifications )
+
+[Java 基础知识、底层原理 面试]( https://github.com/crossoverJie/Java-Interview)
+
+[PHP基础数据结构专题系列目录地址](https://github.com/xx19941215/light-tips)
+
+[后端架构师技术图谱]( https://github.com/xingshaocheng/architect-awesome)
+
+[记一次面试，分享我整理的答案](https://laravel-china.org/articles/9143/write-an-interview-and-share-my-answers)
+
+[PHP 面试知识点汇总 ](https://github.com/eaglewu/php-interview-best-practices-in-china )
+
+[平时积累 ](https://github.com/OMGZui/noteBook)
+
+[PHP 代码简洁之道](https://github.com/ryanmcdermott/clean-code-javascript )
+
+[PHP PSR 标准规范]( https://www.twle.cn/l/yufei/phppsr/php-psr-index.html)
+
  https://laravel-china.org/docs/psr 
-PHP 开发知识结构 https://github.com/han8gui/PHPer 
-PHP多进程系列笔记 https://mp.weixin.qq.com/s/af2my0IC4VIo1WNaCvZAaA
-Redis从入门到实践 https://juejin.im/post/5a912b3f5188257a5c608729 
-浅谈消息队列及常见的消息中间件 https://juejin.im/post/5b41fe36e51d45191252e79e
-《程序员练级攻略》推荐必读书籍清单 https://time.geekbang.org/column/article/10793 
-redis开发设计规范及案例分析 https://mp.weixin.qq.com/s/vS8IMgBIrfGpZYNUwtXrPQ 
-MySQL运维：索引与查询性能优化 https://juejin.im/entry/5b444bf05188251a8d36d034
-从输入URL到页面展示到底发生了什么 https://juejin.im/entry/5b44155f6fb9a04f932fdf80
-数据结构与算法 https://mp.weixin.qq.com/s/FslsYpofN5vE20TEfJNwrw
-PHP面试：说说你理解的二叉树吧 https://segmentfault.com/a/1190000015635928
-初中级PHP面试基础汇总 https://segmentfault.com/a/1190000015412706
+[PHP 开发知识结构 ](https://github.com/han8gui/PHPer) 
+
+[PHP多进程系列笔记](https://mp.weixin.qq.com/s/af2my0IC4VIo1WNaCvZAaA)
+
+[Redis从入门到实践]( https://juejin.im/post/5a912b3f5188257a5c608729) 
+
+[浅谈消息队列及常见的消息中间件](https://juejin.im/post/5b41fe36e51d45191252e79e)
+
+[《程序员练级攻略》推荐必读书籍清单 ](https://time.geekbang.org/column/article/10793) 
+
+[redis开发设计规范及案例分析](https://mp.weixin.qq.com/s/vS8IMgBIrfGpZYNUwtXrPQ )
+
+[MySQL运维：索引与查询性能优化](https://juejin.im/entry/5b444bf05188251a8d36d034)
+
+[从输入URL到页面展示到底发生了什么 ](https://juejin.im/entry/5b44155f6fb9a04f932fdf80)
+
+[数据结构与算法](https://mp.weixin.qq.com/s/FslsYpofN5vE20TEfJNwrw)
+
+[PHP面试：说说你理解的二叉树吧]( https://segmentfault.com/a/1190000015635928)
+
+[初中级PHP面试基础汇总 ](https://segmentfault.com/a/1190000015412706)
+
  https://segmentfault.com/a/1190000010250591 
-php 经典排序算法（解析） https://segmentfault.com/a/1190000011751912
-PHP面试之一：PHP基础知识点 https://segmentfault.com/a/1190000011335262
-PHPer、Laravel 面试可能会遇到的问题及答案 https://github.com/todayqq/caseInterviewQuestions 
-PHPer 面试指南-扩展阅读资源整理 https://segmentfault.com/a/1190000012971148
-3年PHPer的面试总结 http://coffeephp.com/articles/4
-PHP 无限级分类最佳实践 https://segmentfault.com/a/1190000008265618
-数据库面试题(开发者必看) https://segmentfault.com/a/1190000013517914
-10个值得深思的PHP面试问题 https://segmentfault.com/a/1190000005032279
-php 高并发https://www.cnblogs.com/phpper/p/6716248.html
-SegmentFault 技术周刊 Vol.31 - 码农也要学算法https://segmentfault.com/a/1190000010600318 
-SegmentFault 技术周刊 Vol.6 - 面试那些事儿https://segmentfault.com/a/1190000006950447 
-笔试面试 https://segmentfault.com/a/1190000012770931
-PHP常见算法-面试篇 http://www.cnblogs.com/zswordsman/p/5824599.html
-PHPer 面试指南-扩展阅读资源整理 https://segmentfault.com/a/1190000012971148
-shell在手分析服务器日志不愁 https://segmentfault.com/a/1190000009745139
+[php 经典排序算法（解析）]( https://segmentfault.com/a/1190000011751912)
+
+[PHP面试之一：PHP基础知识点]( https://segmentfault.com/a/1190000011335262)
+
+[PHPer、Laravel 面试可能会遇到的问题及答案](https://github.com/todayqq/caseInterviewQuestions )
+
+[PHPer 面试指南-扩展阅读资源整理](https://segmentfault.com/a/1190000012971148)
+
+[3年PHPer的面试总结]( http://coffeephp.com/articles/4)
+
+[PHP 无限级分类最佳实践](https://segmentfault.com/a/1190000008265618)
+
+[数据库面试题(开发者必看)]( https://segmentfault.com/a/1190000013517914)
+
+[10个值得深思的PHP面试问题](https://segmentfault.com/a/1190000005032279)
+
+[php 高并发](https://www.cnblogs.com/phpper/p/6716248.html)
+
+[SegmentFault 技术周刊 Vol.31 - 码农也要学算法](https://segmentfault.com/a/1190000010600318) 
+
+[SegmentFault 技术周刊 Vol.6 - 面试那些事儿](https://segmentfault.com/a/1190000006950447) 
+
+[笔试面试](https://segmentfault.com/a/1190000012770931)
+
+[PHP常见算法-面试篇 ](http://www.cnblogs.com/zswordsman/p/5824599.html)
+
+[PHPer 面试指南-扩展阅读资源整理](https://segmentfault.com/a/1190000012971148)
+
+[shell在手分析服务器日志不愁]( https://segmentfault.com/a/1190000009745139)
+
