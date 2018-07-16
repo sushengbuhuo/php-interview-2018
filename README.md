@@ -2,23 +2,24 @@
 
 本文 [github](https://github.com/sushengbuhuo/php-interview-2018) 会持续更新 
 本文[sf](https://segmentfault.com/a/1190000015651120)
-#简历
+
+# 简历
 
 关于简历怎么写，知乎上有很多对应问题，可以自行搜索，这里推荐几个简历相关的 repo
 [程序员写简历时，常用的例句范式]( https://github.com/resumejob/awesome-resume)
 [简历常用例句 ](https://github.com/resumejob/awesome-resume) 
 [程序员简历模板](https://github.com/geekcompany/ResumeSample )
 [在线简历]( http://cv.ftqq.com/#)
-#笔试题
+# 笔试题
 
-###写一个email的正则
+### 写一个email的正则
 ```js
 $mail = 'test@sina.com';  //邮箱地址
 $pattern = "/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,})$/";
 preg_match($pattern, $mail, $matches);
 //验证可以使用 filter_var($email, FILTER_VALIDATE_EMAIL)
 ```
-###关系比较 
+### 关系比较 
 [参考官网](http://php.net/manual/zh/types.comparisons.php)
 
 ![clipboard.png](/img/bVbdOqw)
