@@ -600,7 +600,7 @@ type 字段 const、eq_reg、ref、range、index和ALL
 
 [关于面试/谈Offer/程序员职场生涯等]( https://github.com/lietoumai/awesome-offer)
 
-[少写PHP "烂"代码] (https://segmentfault.com/a/1190000015274515) 
+[少写PHP "烂"代码](https://segmentfault.com/a/1190000015274515) 
 
 [PHP工程师面试题目]( https://github.com/hookover/php-engineer-interview-questions)
 
@@ -612,7 +612,8 @@ type 字段 const、eq_reg、ref、range、index和ALL
 
 [大话编程]( https://mp.weixin.qq.com/s/nCx7Jb5WRXGzkpsuth6LAw) 
 
-https://mp.weixin.qq.com/s/13OJ8YAXLj3tqAC0aZ1e_Q  
+https://mp.weixin.qq.com/s/13OJ8YAXLj3tqAC0aZ1e_Q
+
 [strace帮助你调试PHP代码]( https://www.jianshu.com/p/cbc716f8a932? )
 
 [Resetful API 设计规范](https://godruoyi.com/posts/resetful-api-design-specifications )
@@ -634,6 +635,7 @@ https://mp.weixin.qq.com/s/13OJ8YAXLj3tqAC0aZ1e_Q
 [PHP PSR 标准规范]( https://www.twle.cn/l/yufei/phppsr/php-psr-index.html)
 
  https://laravel-china.org/docs/psr 
+ 
 [PHP 开发知识结构 ](https://github.com/han8gui/PHPer) 
 
 [PHP多进程系列笔记](https://mp.weixin.qq.com/s/af2my0IC4VIo1WNaCvZAaA)
@@ -657,6 +659,7 @@ https://mp.weixin.qq.com/s/13OJ8YAXLj3tqAC0aZ1e_Q
 [初中级PHP面试基础汇总 ](https://segmentfault.com/a/1190000015412706)
 
  https://segmentfault.com/a/1190000010250591 
+ 
 [php 经典排序算法（解析）]( https://segmentfault.com/a/1190000011751912)
 
 [PHP面试之一：PHP基础知识点]( https://segmentfault.com/a/1190000011335262)
