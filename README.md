@@ -28,7 +28,7 @@ preg_match($pattern, $mail, $matches);
 ### 关系比较 
 [参考官网](http://php.net/manual/zh/types.comparisons.php)
 
-![clipboard.png](/img/bVbdOqw)
+![clipboard.png](https://segmentfault.com/img/bVbdOqw?w=835&h=497)
 
 ### echo (int)((0.1+0.7)*10);//7
 看似有穷的小数, 在计算机的二进制表示里却是无穷的 http://www.cnblogs.com/datang6777/p/7049159.html 
@@ -134,7 +134,7 @@ memcache 只支持简单的key/value数据结构，不像Redis可以支持丰富
 ### 学习PHP的渠道 看过的PHP书，了解的PHP开源项目 
 php.net sf google 
 《Modern PHP》《PHP核心技术和最佳实践》《PHP the right way》
-laravel carbon queryphp等
+laravel carbon querylist等
 
 ### mysql innodb 有哪些索引类型 分别在什么场景下使用
 索引的本质还是提升查询数据库的速度，减少服务器I/O开销 
@@ -269,10 +269,10 @@ print_r(unique_by_key($arr,'title','num'));
 ### 写一个正则 匹配新闻标题不能为数字，纯字母，不能包含 彩票/广告/启示
 
 ### linux 压缩 解压缩命令
-tar -cvf jpg.tar *.jpg
-tar -xvf jpg.tar
+`tar -cvf jpg.tar *.jpg`
+`tar -xvf jpg.tar`
 ### linux下后台执行 test.php 将结果输出到test.log
-php test.php & >test.log
+`php test.php & >test.log`
 ### 写一个shell命令 实现找出所有包含 spread的进程，杀死这些进程并记录日志，日志包含杀死进程名称和杀死进程的时间
 `ps -ef |grep spread |grep -v grep |awk '{print $2}'|xargs kill -9`
 `kill -9 $(ps -ef | grep spread| grep -v grep | awk '{print $2}')`
@@ -287,13 +287,13 @@ time 购买时间
 price 订单总价
 找出销量大于1000的商品，按销量倒序 和 找出消费最多的10个用户
 
-select product_id,count(*) s from orders group by product_id order by s  having s>1000;
+`select product_id,count(*) s from orders group by product_id order by s  having s>1000;`
 
-select user_id,sum(price) s from orders group by user_id order by s desc limit 10;
+`select user_id,sum(price) s from orders group by user_id order by s desc limit 10;`
 
 ### 列出你知道的魔术方法 ，并说明他们的用途
 
-参考手册 http://php.net/manual/zh/language.oop5.magic.php
+[参考手册](http://php.net/manual/zh/language.oop5.magic.php)
 
 ### 写出你知道的http头部属性 注意大小写 并说明用途
 ```js
@@ -572,7 +572,7 @@ worker 进程则一般有多个(具体数量根据实际需要配置)，每个�
 https://youngperson.github.io/blog/#/posts/16
 ### 如何优化 mysql 
  
-数据库字段冗余，增添索引、优化sql、分库分表 主从分离 
+数据库字段冗余，增添索引、优化sql、分库分表 主从分离  
 ### 常用 git 命令
 git add git log git pull git push  git remote git checkout 
 ### php7常用新特性
@@ -584,11 +584,13 @@ curl mb
 ### php 异步如何实现
 curl_multi_exec 
 ### 了解的微服务
+
 ### redis 过期如何处理
 惰性删除与定期删除
 ### explain 关注哪些
 type 字段 const、eq_reg、ref、range、index和ALL
 ### 对你最有挑战的项目是怎样的
+
 ### laravel 优势是什么
 # 非技术问题
 为什么从上家公司离职？
@@ -635,7 +637,7 @@ https://mp.weixin.qq.com/s/13OJ8YAXLj3tqAC0aZ1e_Q
 
 [PHP PSR 标准规范]( https://www.twle.cn/l/yufei/phppsr/php-psr-index.html)
 
- https://laravel-china.org/docs/psr 
+ [psr](https://laravel-china.org/docs/psr )
  
 [PHP 开发知识结构 ](https://github.com/han8gui/PHPer) 
 
