@@ -693,3 +693,4 @@ https://mp.weixin.qq.com/s/13OJ8YAXLj3tqAC0aZ1e_Q
 
 [shell在手分析服务器日志不愁]( https://segmentfault.com/a/1190000009745139)
 
+[PHPer 面试可能会遇到的问题](https://github.com/justcodingnobb/fuck-php-interview)
