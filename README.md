@@ -4,6 +4,10 @@
 
 本文[sf](https://segmentfault.com/a/1190000015651120)
 
+欢迎关注公众号：苏生不惑  每周更新文章，一个有趣又有用的公众号
+
+![关注](https://mmbiz.qpic.cn/mmbiz_jpg/sZeVtjGD4lFg1Ijxp4V5UfVuOkP90u1H3Ifm02J5ibEdoTsvpavaSGO2tGBrH2fxUibI8uiclUo0QrFguhfjnialbw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+
 # 简历
 
 关于简历怎么写，知乎上有很多对应问题，可以自行搜索，这里推荐几个简历相关的 repo
@@ -571,7 +575,14 @@ worker 进程则一般有多个(具体数量根据实际需要配置)，每个�
  master 进程做的事情是 PHP环境初始化、事件监听(重启/重载、关闭、分发请求)、子进程状态
 https://youngperson.github.io/blog/#/posts/16
 ### 如何优化 mysql 
- 
+### 如何防 SQL 注入
+1 表单尽量用 post 提交,核心用户验证都走 post,避开 get容易暴露客户数据
+2 使用HTTP_REFERER 检查源文件是否来自本系统
+3 开启addslashes在特殊符号前加\
+4 使用htmlspecialchars对字符串转实体
+5 用户授权登录
+6 使用PDO
+
 数据库字段冗余，增添索引、优化sql、分库分表 主从分离  
 ### 常用 git 命令
 git add git log git pull git push  git remote git checkout 
@@ -694,3 +705,11 @@ https://mp.weixin.qq.com/s/13OJ8YAXLj3tqAC0aZ1e_Q
 [shell在手分析服务器日志不愁]( https://segmentfault.com/a/1190000009745139)
 
 [PHPer 面试可能会遇到的问题](https://github.com/justcodingnobb/fuck-php-interview)
+
+[程序员的自我修养](https://www.kancloud.cn/kancloud/a-programmer-prepares/78223)
+
+[小土刀的面试刷题笔记](https://wdxtub.com/interview/14520847747820.html)
+
+[笔试面试知识整理](https://github.com/HIT-Alibaba/interview)
+
+[MySQL 避坑宝典](https://github.com/XiaoMi/soar/blob/master/doc/heuristic.md)
