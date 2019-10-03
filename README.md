@@ -20,6 +20,8 @@
 
 [在线简历]( http://cv.ftqq.com/#)
 
+[md简历](https://resume.mdnice.com/)
+
 # 笔试题
 
 ### 写一个email的正则
