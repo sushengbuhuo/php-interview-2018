@@ -632,7 +632,7 @@ https://mp.weixin.qq.com/s/13OJ8YAXLj3tqAC0aZ1e_Q
 
 [strace帮助你调试PHP代码]( https://www.jianshu.com/p/cbc716f8a932? )
 
-[Resetful API 设计规范](https://godruoyi.com/posts/resetful-api-design-specifications )
+[Resetful API 设计规范](https://godruoyi.com/posts/the-resetful-api-design-specification )
 
 [Java 基础知识、底层原理 面试]( https://github.com/crossoverJie/Java-Interview)
 
